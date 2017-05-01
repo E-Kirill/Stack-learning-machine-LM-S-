@@ -1,0 +1,160 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+    background-color: #222222;
+    overflow: hidden;
+}
+
+div{
+    float: left;
+}
+
+#codeField{
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    margin-left: 1%;
+    width: 36%;
+    height: 95vh;
+    background-color: #333333;
+}
+
+#rows{
+    padding-top: 0.5%;
+    width: 5%;
+    color: #999999;
+    height: 91.5vh;
+    line-height: 88%;
+    text-align: right;
+    font-size: 95%;
+    overflow: auto;
+}
+
+
+#codeField textarea{
+    float: right;
+    box-sizing: border-box;
+    width: 95%;
+    background-color: #333333;
+    height: 91.5vh;
+    resize: none;
+    color: #99ccff;
+    font-size: 100%;
+    line-height: 100%;
+}
+
+.rowsNumber{
+    padding-right: 1%;
+    font-size: 100%;
+}
+
+#state{
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    margin-left: 1%;
+    width: 30%;
+    height: 95vh;
+    background-color: #333333;
+}
+
+#stateBody{
+    width: 100%;
+}
+
+#stateTable{
+    color: #888888;
+    width: 100%;
+}
+
+#rightSideBar{
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    margin-left: 1%;
+    width: 30%;
+    height: 95vh;
+    background-color: #333333;
+}
+
+.fieldMeaning{
+    font-size: 2vh;
+    width: 99%;
+    height: 2.5vh;
+    padding: 0.5%;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh; 
+    color: #777777;
+    background-color: #444444;
+}
+
+#output{
+    font-size: 2vh;
+    width: 100%;
+    height: 58vh;
+}
+
+#output #outputBody{
+    width: 100%;
+    height: 54.5vh;
+    overflow: auto;
+    white-space: normal
+}
+
+#input{
+    font-size: 2vh;
+    width: 100%;
+    height: 20vh;
+}
+
+#currentCMD{
+    font-size: 2vh;
+    width: 100%;
+    height: 7vh;
+}
+
+#controls{
+    font-size: 2vh;
+    width: 100%;
+    height: 10vh;
+}
+
+#controlsBody{
+    width: 100%;
+    height: 10vh;
+}
+
+#controlsBody button{
+    width: 100%;
+    height: 3.25vh;
+    background-color: #333333;
+    border: none;
+    color:  #909090;
+    border-bottom: 0.1vh solid black;
+}
+
+#controlsBody button:hover{
+    background-color: #222222;
+}
+
+.error{
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 98%;
+    background-color: #ff5050;
+    word-wrap: break-word;
+}
+
+.message{
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 98%;
+    background-color: #3366ff;
+    word-wrap: break-word;
+}
+
+.success{
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 98%;
+    background-color: #009933;
+    word-wrap: break-word;
+}

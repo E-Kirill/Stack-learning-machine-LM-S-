@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="um-s">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <script src="js/all.min.js"></script>
+    <link href="css/app.css" rel="stylesheet">
+    <title>УМ-С</title>
+  </head>
+  <body ng-controller="um-sCtrl">
+    <div id="codeField">
+        <div class="fieldMeaning">Code</div>
+        <div id="rows">
+          <span class="rowsNumber" ng-repeat="n in rows">
+            {{n}}<br>
+          </span>
+        </div>
+        <textarea id="code" ng-model="input" ng-change="addRows($event)" autofocus></textarea>
+    </div>
+    <div id="state">
+      <div class="fieldMeaning">State</div>
+      <div id="stateBody">
+        <table class="table" id="stateTable">
+          <tr>
+            <td>Location</td>
+            <td>Value</td>
+          </tr>
+          <tr ng-repeat="var in variables">
+            <td>{{var.location}}</td>
+            <td>{{var.value}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="rightSideBar">
+      <div id="output">
+          <div class="fieldMeaning">Output</div>
+          <div id="outputBody"></div>
+      </div>
+      <div id="input">
+          <div class="fieldMeaning">Input</div>
+          <div id="inputBody"></div>
+      </div>
+      <div id="currentCMD">
+          <div class="fieldMeaning">Current command</div>
+          <div id="currentCMDBody"></div>
+      </div>
+      <div id="controls">
+        <div class="fieldMeaning">Controls</div>
+        <div id="controlsBody">
+          <button ng-click="execute('sbs')">Step-by-step execution</button>
+          <button ng-click="execute()">Execute</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
